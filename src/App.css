@@ -1,0 +1,62 @@
+/* src/App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0c1f3d;
+  color: #ffffff;
+}
+
+.container {
+  background-color: #1c3d63;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  width: 650px;
+  text-align: center;
+}
+
+h1 {
+  color: #ffcc00;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #6cb2eb;
+  color: black;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+li:hover {
+  background-color: purple;
+  transform: scale(1.02);
+  color: gold;
+}
+
+.quiz-completed {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.quiz-completed h2 {
+  color: #ffcc00;
+}
+
+.quiz-completed p {
+  font-size: 18px;
+  margin-top: 10px;
+}
