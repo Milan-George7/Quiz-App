@@ -81,11 +81,12 @@ const QuizComponent = () => {
           question={questions[currentQuestion].question}
           options={questions[currentQuestion].options}
           onAnswer={handleAnswer}
+          questionNumber={currentQuestion + 1}
         />
       ) : (
         <div className='quiz-completed'>
           <h2>Quiz Completed</h2>
-          <p>Your Score: {score}/10</p>
+          <p>You got {score}/10 correct answers</p>
         </div>
       )}
     </div>

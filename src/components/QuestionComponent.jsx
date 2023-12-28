@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const QuestionComponent = ({ question, options, onAnswer }) => {
+const QuestionComponent = ({ question, options, onAnswer, questionNumber }) => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleOptionClick = (index) => {
@@ -9,7 +9,11 @@ const QuestionComponent = ({ question, options, onAnswer }) => {
   };
 
   return (
+
+    
     <div className='container'>
+      <h1>Quiz App</h1>
+      <h3>Question No: {questionNumber}</h3>
       <h2>{question}</h2>
       <ul>
         {options.map((option, index) => (
